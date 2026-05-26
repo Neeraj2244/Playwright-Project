@@ -1,0 +1,25 @@
+{
+  "name": "playwright-project",
+  "version": "1.0.0",
+  "description": "Playwright test automation project",
+  "scripts": {
+    "test": "playwright test",
+    "test:chrome": "playwright test --project=chrome",
+    "test:firefox": "playwright test --project=firefox",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:local": "cross-env TEST_ENV=local playwright test",
+    "test:staging": "cross-env TEST_ENV=staging playwright test",
+    "test:production": "cross-env TEST_ENV=production playwright test",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "cross-env": "^10.1.0",
+    "eslint": "^9.0.0",
+    "typescript": "^5.0.0"
+  }
+}

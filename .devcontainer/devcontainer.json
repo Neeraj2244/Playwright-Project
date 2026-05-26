@@ -1,0 +1,16 @@
+{
+  "name": "Playwright Project",
+  "image": "mcr.microsoft.com/playwright:v1.44.0-jammy",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "20" }
+  },
+  "postCreateCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-playwright.playwright",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}

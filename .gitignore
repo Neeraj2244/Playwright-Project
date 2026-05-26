@@ -1,0 +1,17 @@
+# Windows
+desktop.ini
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Playwright output
+playwright-report/
+test-results/
+
+# Environment files
+env/*.env
+!env/*.env.example
+
+# Build
+dist/

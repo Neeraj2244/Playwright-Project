@@ -1,0 +1,10 @@
+---
+alwaysApply: true
+---
+
+# Cursor Orchestrator — Playwright Project
+
+- Tests live in `tests/` as `*.spec.ts` files
+- Page Objects live in `pages/` — one class per page
+- Shared fixtures are in `fixtures/pom/index.ts` (single import point)
+- Run `npm test` to execute all tests; `npm run test:chrome` or `npm run test:firefox` for a single browser
